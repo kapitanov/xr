@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{0F42E350-18EF-4062-8E29-389B7AACAE3D}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AISTek.XRage</RootNamespace>
+    <AssemblyName>XRage.Engine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>HiDef</XnaProfile>
+    <XnaCrossPlatformGroupID>7a578c5b-fae4-49d3-81c8-c1998f166a45</XnaCrossPlatformGroupID>
+    <XnaOutputType>Library</XnaOutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>True</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>False</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>False</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>False</CodeContractsArithmeticObligations>
+    <CodeContractsRedundantAssumptions>False</CodeContractsRedundantAssumptions>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>False</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsPlatformPath />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsBaseLineFile />
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>%28none%29</CodeContractsReferenceAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>True</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>False</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>False</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>False</CodeContractsArithmeticObligations>
+    <CodeContractsRedundantAssumptions>False</CodeContractsRedundantAssumptions>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>False</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsPlatformPath />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsBaseLineFile />
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>%28none%29</CodeContractsReferenceAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\BaseComponent.cs" />
+    <Compile Include="Components\BaseRenderComponent.cs" />
+    <Compile Include="Components\ViewModelRenderComponent.cs" />
+    <Compile Include="Components\ParticleEmitter.cs" />
+    <Compile Include="Components\PhysicsComponent.cs" />
+    <Compile Include="Components\RenderPassDesc.cs" />
+    <Compile Include="Components\ShapeType.cs" />
+    <Compile Include="Composition\CameraInformationScreen.cs" />
+    <Compile Include="Composition\FpsCounterScreen.cs" />
+    <Compile Include="Composition\ICompositionScreen.cs" />
+    <Compile Include="Composition\RenderingStatisticsScreen.cs" />
+    <Compile Include="Composition\VisualComposer.cs" />
+    <Compile Include="Configuration\ConfigurationNode.cs" />
+    <Compile Include="Configuration\ConfigurationTransaction.cs" />
+    <Compile Include="Configuration\GameSettings.cs" />
+    <Compile Include="Configuration\IConfigurationTransaction.cs" />
+    <Compile Include="Configuration\PhysicsSettings.cs" />
+    <Compile Include="Content\IContentWriterWrapper.cs" />
+    <Compile Include="Entities\BaseController.cs" />
+    <Compile Include="Entities\BasePropertyController.cs" />
+    <Compile Include="Entities\BaseSky.cs" />
+    <Compile Include="Entities\FreeLookPerspectiveCamera.cs" />
+    <Compile Include="Components\LightEmitterComponent.cs" />
+    <Compile Include="Components\WorldModelRenderComponent.cs" />
+    <Compile Include="Configuration\ContentSettings.cs" />
+    <Compile Include="Configuration\Settings.cs" />
+    <Compile Include="Configuration\ConfigurationStorage.cs" />
+    <Compile Include="Configuration\ConfigurationStorageHelper.cs" />
+    <Compile Include="Entities\BaseCamera.cs" />
+    <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\BasePerspectiveCamera.cs" />
+    <Compile Include="Entities\CameraRotation.cs" />
+    <Compile Include="Entities\EntityIds.cs" />
+    <Compile Include="Entities\LightEmitter.cs" />
+    <Compile Include="FpsCounter.cs" />
+    <Compile Include="Graphics\ConstantFloat2Binding.cs" />
+    <Compile Include="Graphics\ConstantFloat3Binding.cs" />
+    <Compile Include="Graphics\ConstantFloat4Binding.cs" />
+    <Compile Include="Graphics\ConstantFloatBinding.cs" />
+    <Compile Include="Graphics\ConstantMatrixBinding.cs" />
+    <Compile Include="Graphics\FalloffType.cs" />
+    <Compile Include="Graphics\GeometryRenderChunk.cs" />
+    <Compile Include="Graphics\GraphicsLevel.cs" />
+    <Compile Include="Configuration\GraphicsSettings.cs" />
+    <Compile Include="Graphics\GraphicsSystem.cs" />
+    <Compile Include="Graphics\ICamera.cs" />
+    <Compile Include="Graphics\IFloatOperation.cs" />
+    <Compile Include="Graphics\IMatrixOperation.cs" />
+    <Compile Include="Graphics\IRenderChunk.cs" />
+    <Compile Include="Graphics\IRenderChunkProvider.cs" />
+    <Compile Include="Graphics\IRendererFactory.cs" />
+    <Compile Include="Graphics\IVector2Operation.cs" />
+    <Compile Include="Graphics\IVector3Operation.cs" />
+    <Compile Include="Graphics\IVector4Operation.cs" />
+    <Compile Include="Graphics\LevelOfDetail.cs" />
+    <Compile Include="Graphics\LightRenderChunk.cs" />
+    <Compile Include="Graphics\LightType.cs" />
+    <Compile Include="Graphics\Material.cs" />
+    <Compile Include="Graphics\MaterialParser.cs" />
+    <Compile Include="Graphics\MaterialParserConstants.cs" />
+    <Compile Include="Graphics\MaterialReader.cs" />
+    <Compile Include="Graphics\MatrixOperations.cs" />
+    <Compile Include="Graphics\MatrixOperationViewProjection.cs" />
+    <Compile Include="Graphics\MatrixOperationWorldView.cs" />
+    <Compile Include="Graphics\MatrixOperationWorldViewProjection.cs" />
+    <Compile Include="Graphics\ParticleChunk.cs" />
+    <Compile Include="Graphics\PreferredRenderOrder.cs" />
+    <Compile Include="Graphics\RenderChunkManager.cs" />
+    <Compile Include="Graphics\RenderChunkProviderManager.cs" />
+    <Compile Include="Graphics\Renderer.cs" />
+    <Compile Include="Graphics\RenderingStatistics.cs" />
+    <Compile Include="Graphics\RenderPassDescriptor.cs" />
+    <Compile Include="Graphics\RenderPassType.cs" />
+    <Compile Include="Graphics\Shader.cs" />
+    <Compile Include="Graphics\TextureBinding.cs" />
+    <Compile Include="Graphics\VariableBoolId.cs" />
+    <Compile Include="Graphics\VariableFloat2Binding.cs" />
+    <Compile Include="Graphics\VariableFloat2Id.cs" />
+    <Compile Include="Graphics\VariableFloat3Binding.cs" />
+    <Compile Include="Graphics\VariableFloat3Id.cs" />
+    <Compile Include="Graphics\VariableFloat4Binding.cs" />
+    <Compile Include="Graphics\VariableFloat4Id.cs" />
+    <Compile Include="Graphics\VariableFloatBinding.cs" />
+    <Compile Include="Graphics\VariableFloatId.cs" />
+    <Compile Include="Graphics\VariableMatrixBinding.cs" />
+    <Compile Include="Graphics\VariableMatrixId.cs" />
+    <Compile Include="Graphics\VariableManager.cs" />
+    <Compile Include="Graphics\VariableTexture2d.cs" />
+    <Compile Include="Graphics\VariableTexture2DBinding.cs" />
+    <Compile Include="Graphics\VertexPositionNormalBinormalTangentTexture.cs" />
+    <Compile Include="IInterfaceManager.cs" />
+    <Compile Include="InputManagement\ActionType.cs" />
+    <Compile Include="InputManagement\IInputBindingConstructor.cs" />
+    <Compile Include="InputManagement\IInputBindingWriter.cs" />
+    <Compile Include="InputManagement\InputBinding.cs" />
+    <Compile Include="InputManagement\InputBindingFactory.cs" />
+    <Compile Include="InputManagement\InputBindingWriter.cs" />
+    <Compile Include="InputManagement\InputState.cs" />
+    <Compile Include="InputManagement\KeyboardInputBinding.cs" />
+    <Compile Include="InputManagement\KeyboardInputBindingConstructor.cs" />
+    <Compile Include="InputManagement\KeyboardInputBindingWriter.cs" />
+    <Compile Include="InputManagement\KeyboardInputState.cs" />
+    <Compile Include="InputManagement\MouseButton.cs" />
+    <Compile Include="InputManagement\MouseInputState.cs" />
+    <Compile Include="InputManagement\NamedAction.cs" />
+    <Compile Include="InputManagement\InputManager.cs" />
+    <Compile Include="InterfaceManager.cs" />
+    <Compile Include="Interfaces\CameraInterface.cs" />
+    <Compile Include="Interfaces\PhysicsInterface.cs" />
+    <Compile Include="InterfaceType.cs" />
+    <Compile Include="IPoolItem.cs" />
+    <Compile Include="Messaging\EntityMessages\MessageGetProperty.cs" />
+    <Compile Include="Messaging\EntityMessages\MessageModifyProperty.cs" />
+    <Compile Include="Messaging\EntityMessages\MessageSetColorProperty.cs" />
+    <Compile Include="Messaging\EntityMessages\MessageSetProperty.cs" />
+    <Compile Include="Messaging\EntityMessages\PropertyData.cs" />
+    <Compile Include="Messaging\RenderingMessages\MessageGetActiveCamera.cs" />
+    <Compile Include="Messaging\EngineMessageHandler.cs" />
+    <Compile Include="Messaging\EntityMessages\MessageChildAdded.cs" />
+    <Compile Include="Messaging\EntityMessages\MessageChildRemoved.cs" />
+    <Compile Include="Messaging\EntityMessages\MessageGetName.cs" />
+    <Compile Include="Messaging\EntityMessages\MessageGetPosition.cs" />
+    <Compile Include="Messaging\EntityMessages\MessageGetRotation.cs" />
+    <Compile Include="Messaging\EntityMessages\MessageModifyPosition.cs" />
+    <Compile Include="Messaging\EntityMessages\MessageModifyRotation.cs" />
+    <Compile Include="Messaging\EntityMessages\MessageParentAdded.cs" />
+    <Compile Include="Messaging\EntityMessages\MessageParentRemoved.cs" />
+    <Compile Include="Messaging\EntityMessages\MessageRemoveChild.cs" />
+    <Compile Include="Messaging\EntityMessages\MessageSetName.cs" />
+    <Compile Include="Messaging\EntityMessages\MessageSetParent.cs" />
+    <Compile Include="Messaging\EntityMessages\MessageSetPosition.cs" />
+    <Compile Include="Messaging\EntityMessages\MessageSetRotation.cs" />
+    <Compile Include="Messaging\IMessage.cs" />
+    <Compile Include="Messaging\Message.cs" />
+    <Compile Include="Messaging\MessageType.cs" />
+    <Compile Include="Messaging\MessagingPoll.cs" />
+    <Compile Include="Messaging\RenderingMessages\MessageMoveCamera.cs" />
+    <Compile Include="Messaging\RenderingMessages\MessageMoveCameraView.cs" />
+    <Compile Include="Messaging\RenderingMessages\MessageRotateCamera.cs" />
+    <Compile Include="Messaging\RenderingMessages\MessageSetActiveCamera.cs" />
+    <Compile Include="Messaging\RenderingMessages\MessageSetCameraPosition.cs" />
+    <Compile Include="Physics\ActorDesc.cs" />
+    <Compile Include="Physics\BoxShapeDesc.cs" />
+    <Compile Include="Physics\CapsuleShapeDesc.cs" />
+    <Compile Include="Physics\EntityCollisionInfo.cs" />
+    <Compile Include="Physics\HeightFieldShapeDesc.cs" />
+    <Compile Include="Physics\IPhysicManagerFactory.cs" />
+    <Compile Include="Physics\IPhysicsActor.cs" />
+    <Compile Include="Physics\IPhysicsScene.cs" />
+    <Compile Include="Physics\IShapeDesc.cs" />
+    <Compile Include="Physics\PhysicsManager.cs" />
+    <Compile Include="Physics\SphereShapeDesc.cs" />
+    <Compile Include="Physics\TriangleMeshShapeDesc.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SceneManagement\LoadingState.cs" />
+    <Compile Include="SceneManagement\Scene.cs" />
+    <Compile Include="SceneManagement\SceneLoadingProgressEventArgs.cs" />
+    <Compile Include="SceneManagement\SceneManager.cs" />
+    <Compile Include="SceneManagement\SceneRootEntity.cs" />
+    <Compile Include="XComponent.cs" />
+    <Compile Include="XGame.cs" />
+    <Compile Include="XInterface.cs" />
+    <Compile Include="XMath.cs" />
+    <Compile Include="XObjectPool.cs" />
+    <Compile Include="XProperty.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>

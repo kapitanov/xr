@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+  <mainMenu>
+    
+    <item title="Load sample scene">
+      <item.action>
+        <load_scene path="levels/test_scene/scene"/>
+      </item.action>
+    </item>
+
+    <item title="Exit">
+      <item.action>
+        <exit_game />
+      </item.action>
+    </item>
+    
+  </mainMenu>
+</menu>

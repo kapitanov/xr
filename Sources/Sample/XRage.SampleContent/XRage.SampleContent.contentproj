@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectGuid>{50E10B12-E525-4834-A568-DB8FE4E65312}</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+    <ContentRootDirectory>.</ContentRootDirectory>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>XRage.SampleContent</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="materials\terrain.xm">
+      <Name>terrain</Name>
+      <Importer>CompiledMaterialImporter</Importer>
+      <Processor>CompiledMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="models\ship1.fbx">
+      <Name>ship1</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>StaticModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+    </Compile>
+    <Compile Include="textures\grass.dds">
+      <Name>grass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="textures\grassNormal.dds">
+      <Name>grassNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="textures\grassyRock.dds">
+      <Name>grassyRock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="textures\grassyRockNormal.dds">
+      <Name>grassyRockNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="textures\rock.dds">
+      <Name>rock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="textures\rockNormal.dds">
+      <Name>rockNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="textures\sand.dds">
+      <Name>sand</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="textures\sandNormal.dds">
+      <Name>sandNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="shaders\terrain.fx">
+      <Name>terrain</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="shaders\deferred_renderer\clear_gbuffer.fx">
+      <Name>clear_gbuffer</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="materials\ship1.xm">
+      <Name>ship1</Name>
+      <Importer>CompiledMaterialImporter</Importer>
+      <Processor>CompiledMaterialProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="shaders\deferred_renderer\directional_light.fx">
+      <Name>directional_light</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="shaders\deferred_renderer\point_light.fx">
+      <Name>point_light</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="models\ground.x">
+      <Name>ground</Name>
+      <Importer>XImporter</Importer>
+      <Processor>StaticModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="materials\ground.xm">
+      <Name>ground</Name>
+      <Importer>CompiledMaterialImporter</Importer>
+      <Processor>CompiledMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="shaders\deferred_renderer\compose_light.fx">
+      <Name>compose_light</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="materials\wireframe.xm">
+      <Name>wireframe</Name>
+      <Importer>CompiledMaterialImporter</Importer>
+      <Processor>CompiledMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="materials\wireframe_red.xm">
+      <Name>wireframe_red</Name>
+      <Importer>CompiledMaterialImporter</Importer>
+      <Processor>CompiledMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="materials\wireframe_green.xm">
+      <Name>wireframe_green</Name>
+      <Importer>CompiledMaterialImporter</Importer>
+      <Processor>CompiledMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="shaders\temporary.fx">
+      <Name>temporary</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="materials\temporary.xm">
+      <Name>temporary</Name>
+      <Importer>CompiledMaterialImporter</Importer>
+      <Processor>CompiledMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="levels\test.vmf">
+      <Name>test</Name>
+      <Importer>VmfSceneImporter</Importer>
+      <Processor>VmfSceneProcessor</Processor>
+    </Compile>
+    <Compile Include="materials\dev\graygrid.xm">
+      <Name>graygrid</Name>
+      <Importer>CompiledMaterialImporter</Importer>
+      <Processor>CompiledMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="levels\bridge_r.vmf">
+      <Name>bridge_r</Name>
+      <Importer>VmfSceneImporter</Importer>
+      <Processor>VmfSceneProcessor</Processor>
+    </Compile>
+    <Compile Include="materials\empty.xm">
+      <Name>empty</Name>
+      <Importer>CompiledMaterialImporter</Importer>
+      <Processor>CompiledMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="materials\dev\measure_generic_a.xm">
+      <Name>measure_generic_a</Name>
+      <Importer>CompiledMaterialImporter</Importer>
+      <Processor>CompiledMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="shaders\specular_map.fx">
+      <Name>specular_map</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="shaders\parallax_normal_specular_map.fx">
+      <Name>parallax_normal_specular_map</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="shaders\parallax_normal_map.fx">
+      <Name>parallax_normal_map</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <ProcessorParameters_DebugMode>Optimize</ProcessorParameters_DebugMode>
+    </Compile>
+    <Compile Include="materials\stones.xm">
+      <Name>stones</Name>
+      <Importer>CompiledMaterialImporter</Importer>
+      <Processor>CompiledMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="materials\wood.xm">
+      <Name>wood</Name>
+      <Importer>CompiledMaterialImporter</Importer>
+      <Processor>CompiledMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="models\statue.X">
+      <Name>statue</Name>
+      <Importer>XImporter</Importer>
+      <Processor>StaticModelProcessor</Processor>
+    </Compile>
+    <Compile Include="shaders\deferred_renderer\spot_light.fx">
+      <Name>spot_light</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="levels\gulscene\scene.xscene">
+      <SubType>Designer</SubType>
+      <Name>scene</Name>
+      <Importer>XSceneImporter</Importer>
+      <Processor>XSceneProcessor</Processor>
+    </Compile>
+    <None Include="shaders\include\common.fxh">
+      <Name>common</Name>
+    </None>
+    <None Include="shaders\include\shadowing.fxh">
+      <Name>shadowing</Name>
+    </None>
+    <None Include="shaders\include\vertexData.fxh">
+      <Name>vertexData</Name>
+    </None>
+    <None Include="shaders\include\hdr.fxh">
+      <Name>hdr</Name>
+    </None>
+    <None Include="shaders\include\gBuffer.fxh">
+      <Name>gBuffer</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+    <Compile Include="shaders\normalMap.fx">
+      <Name>normalMap</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="shaders\normal_specular_map.fx">
+      <Name>normal_specular_map</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sprites\fonts\fpsCounterFont.spritefont">
+      <Name>fpsCounterFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+    <Compile Include="sprites\fonts\statisticsFont.spritefont">
+      <Name>statisticsFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+    <Compile Include="shaders\wireframe.fx">
+      <Name>wireframe</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sprites\fonts\preloader.spritefont">
+      <Name>preloader</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+    <Compile Include="sprites\fonts\vcf.spritefont">
+      <Name>vcf</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+    <Compile Include="shaders\screen_space_shadows\shadow_occlusion_mask.fx">
+      <Name>shadow_occlusion_mask</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="shaders\screen_space_shadows\shadow_map.fx">
+      <Name>shadow_map</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="shaders\screen_space_shadows\horizontal_blur.fx">
+      <Name>horizontal_blur</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="shaders\screen_space_shadows\shadow_blur.fx">
+      <Name>shadow_blur</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\include\gBufferPostprocess.fxh">
+      <Name>gBufferPostprocess</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </None>
+    <None Include="shaders\include\lighting.fxh">
+      <Name>lighting</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Engine\XRage.ContentPipelineExtension\XRage.ContentPipelineExtension.csproj">
+      <Project>{B0BB62A0-1B61-4372-93DC-5526A05D805B}</Project>
+      <Name>XRage.ContentPipelineExtension</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="textures\ship1_c.tga">
+      <Name>ship1_c</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="textures\ship1_n.tga">
+      <Name>ship1_n</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="textures\ship1_s.tga">
+      <Name>ship1_s</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="textures\ground_diffuse.jpg">
+      <Name>ground_diffuse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="textures\ground_normal.jpg">
+      <Name>ground_normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="textures\ground_specular.jpg">
+      <Name>ground_specular</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="levels\test_scene\gcanyon_height.png">
+      <Name>gcanyon_height</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="textures\terrain\gcanyon_terrain.png">
+      <Name>gcanyon_terrain</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="sprites\preloader\progressBarBackground.png">
+      <Name>progressBarBackground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sprites\preloader\progressBarForeground.png">
+      <Name>progressBarForeground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="sprites\preloader\frame_0.png">
+      <Name>frame_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sprites\preloader\frame_1.png">
+      <Name>frame_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sprites\preloader\frame_2.png">
+      <Name>frame_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sprites\preloader\frame_3.png">
+      <Name>frame_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sprites\preloader\frame_4.png">
+      <Name>frame_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sprites\preloader\frame_5.png">
+      <Name>frame_5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sprites\preloader\frame_6.png">
+      <Name>frame_6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="sprites\preloader\frame_7.png">
+      <Name>frame_7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="levels\test_scene\scene.xscene">
+      <Name>scene</Name>
+      <Importer>XSceneImporter</Importer>
+      <Processor>XSceneProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="textures\dev\bump.tga">
+      <Name>bump</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="textures\dev\measure_generic_a.tga">
+      <Name>measure_generic_a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="textures\dev\measureGenericB.tga">
+      <Name>measureGenericB</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="textures\ground_height.jpg">
+      <Name>ground_height</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="textures\stones\stones_diffuse.bmp">
+      <Name>stones_diffuse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="textures\stones\stones_height.tga">
+      <Name>stones_height</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="textures\wood\wood_height.tga">
+      <Name>wood_height</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="textures\wood\wood.jpg">
+      <Name>wood</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.AudioImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

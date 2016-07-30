@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<actions>
+  <action name="camera.moveForward">
+    <bindings>
+      <keyboard key="W" type="Hold"/>
+    </bindings>
+  </action>
+  
+  <action name="camera.moveBackward">
+    <bindings>
+      <keyboard key="S" type="Hold"/>
+    </bindings>
+  </action>
+  
+  <action name="camera.fastMovement">
+    <bindings>
+      <keyboard key="LeftShift" type="Hold"/>
+    </bindings>
+  </action>
+
+  <action name="menu.switchMenu">
+    <bindings>
+      <keyboard key="Escape" type="Press"/>
+    </bindings>
+  </action>
+
+  <action name="menu.prevItem">
+    <bindings>
+      <keyboard key="Up" type="Press"/>
+    </bindings>
+  </action>
+  
+  <action name="menu.nextItem">
+    <bindings>
+      <keyboard key="Down" type="Press"/>
+    </bindings>
+  </action>
+  
+  <action name="menu.exec">
+    <bindings>
+      <keyboard key="Enter" type="Press"/>
+    </bindings>
+  </action>
+
+  <action name="shadowOcclusion.incBias">
+    <bindings>
+      <keyboard key="D0" type="Press"/>
+    </bindings>
+  </action>
+
+  <action name="shadowOcclusion.decBias">
+    <bindings>
+      <keyboard key="D9" type="Press"/>
+    </bindings>
+  </action>
+
+
+  <action name="shadowOcclusion.enable">
+    <bindings>
+      <keyboard key="F1" type="Press"/>
+    </bindings>
+  </action>
+
+  <action name="shadowOcclusion.disable">
+    <bindings>
+      <keyboard key="F2" type="Press"/>
+    </bindings>
+  </action>
+
+
+  <action name="shadowOcclusion.size128">
+    <bindings>
+      <keyboard key="NumPad1" type="Press"/>
+    </bindings>
+  </action>
+  <action name="shadowOcclusion.size256">
+    <bindings>
+      <keyboard key="NumPad2" type="Press"/>
+    </bindings>
+  </action>
+  <action name="shadowOcclusion.size512">
+    <bindings>
+      <keyboard key="NumPad3" type="Press"/>
+    </bindings>
+  </action>
+  <action name="shadowOcclusion.size1024">
+    <bindings>
+      <keyboard key="NumPad4" type="Press"/>
+    </bindings>
+  </action>
+  <action name="shadowOcclusion.size2048">
+    <bindings>
+      <keyboard key="NumPad5" type="Press"/>
+    </bindings>
+  </action>
+  <action name="shadowOcclusion.size4096">
+    <bindings>
+      <keyboard key="NumPad6" type="Press"/>
+    </bindings>
+  </action>
+
+  <action name="shadowOcclusion.useMaterialShader">
+    <bindings>
+      <keyboard key="Home" type="Press"/>
+    </bindings>
+  </action>
+  <action name="shadowOcclusion.useRendererShader">
+    <bindings>
+      <keyboard key="End" type="Press"/>
+    </bindings>
+  </action>
+
+
+</actions>

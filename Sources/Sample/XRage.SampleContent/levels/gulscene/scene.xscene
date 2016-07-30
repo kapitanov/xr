@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xscene>
+
+  <xscene.properties>
+    <scene_name>test xscene</scene_name>
+  </xscene.properties>
+
+  <xscene.world>
+
+    <world>
+      <world.statics>
+        <!-- room 1 -->
+        <brush material="stones"
+               useSmoothing="off">
+          <brush.faces>
+            <face id="wall_e[0]">
+              <face.uv_data>
+                <u_axis x="0" y="1" z="0" />
+                <v_axis x="0" y="0" z="1" />
+                <uv_scale x="0.25" y="0.25" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="0" y="250" z ="0"/>
+                <vertex x="0" y="250" z ="-50"/>
+                <vertex x="0" y="0" z ="-50"/>
+                <vertex x="0" y="0" z ="0"/>
+              </face.vertices>
+            </face>
+            <face id="wall_e[1]">
+              <face.uv_data>
+                <u_axis x="0" y="1" z="0" />
+                <v_axis x="0" y="0" z="1" />
+                <uv_scale x="0.25" y="0.25" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="0" y="250" z ="-50"/>
+                <vertex x="0" y="250" z ="-150"/>
+                <vertex x="0" y="200" z ="-150"/>
+                <vertex x="0" y="200" z ="-50"/>
+              </face.vertices>
+            </face>
+            <face id="wall_e[2]">
+              <face.uv_data>
+                <u_axis x="0" y="1" z="0" />
+                <v_axis x="0" y="0" z="1" />
+                <uv_scale x="0.25" y="0.25" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="0" y="0" z ="-150"/>
+                <vertex x="0" y="250" z ="-150"/>
+                <vertex x="0" y="250" z ="-400"/>
+                <vertex x="0" y="0" z ="-400"/>
+              </face.vertices>
+            </face>
+            <face id="wall_n">
+              <face.uv_data>
+                <u_axis x="0" y="1" z="0" />
+                <v_axis x="1" y="0" z="0" />
+                <uv_scale x="0.25" y="0.25" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="0" y="0" z ="-400"/>
+                <vertex x="0" y="250" z ="-400"/>
+                <vertex x="-400" y="250" z ="-400"/>
+                <vertex x="-400" y="0" z ="-400"/>
+              </face.vertices>
+            </face>
+            <face id="wall_w">
+              <face.uv_data>
+                <u_axis x="0" y="1" z="0" />
+                <v_axis x="0" y="0" z="-1" />
+                <uv_scale x="0.25" y="0.25" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="-400" y="0" z ="-400"/>
+                <vertex x="-400" y="250" z ="-400"/>
+                <vertex x="-400" y="250" z ="0"/>
+                <vertex x="-400" y="0" z ="0"/>
+              </face.vertices>
+            </face>
+            <face id="wall_s[0]">
+              <face.uv_data>
+                <u_axis x="0" y="1" z="0" />
+                <v_axis x="-1" y="0" z="0" />
+                <uv_scale x="0.25" y="0.25" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="-400" y="0" z ="0"/>
+                <vertex x="-400" y="250" z ="0"/>
+                <vertex x="-350" y="250" z ="0"/>
+                <vertex x="-350" y="0" z ="0"/>
+              </face.vertices>
+            </face>
+            <face id="wall_s[1]">
+              <face.uv_data>
+                <u_axis x="0" y="1" z="0" />
+                <v_axis x="-1" y="0" z="0" />
+                <uv_scale x="0.25" y="0.25" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="-350" y="200" z ="0"/>
+                <vertex x="-350" y="250" z ="0"/>
+                <vertex x="-250" y="250" z ="0"/>
+                <vertex x="-250" y="200" z ="0"/>
+              </face.vertices>
+            </face>
+            <face id="wall_s[2]">
+              <face.uv_data>
+                <u_axis x="0" y="1" z="0" />
+                <v_axis x="-1" y="0" z="0" />
+                <uv_scale x="0.25" y="0.25" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="-250" y="0" z ="0"/>
+                <vertex x="-250" y="250" z ="0"/>
+                <vertex x="-0" y="250" z ="0"/>
+                <vertex x="-0" y="0" z ="0"/>
+              </face.vertices>
+            </face>
+
+            <face id="floor">
+              <face.uv_data>
+                <u_axis x="0" y="0" z="1" />
+                <v_axis x="1" y="0" z="0" />
+                <uv_scale x="0.25" y="0.25" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="0" y="0" z ="0"/>
+                <vertex x="0" y="0" z ="-400"/>
+                <vertex x="-400" y="0" z ="-400"/>
+                <vertex x="-400" y="0" z ="0"/>
+              </face.vertices>
+            </face>
+            <face id="ceiling">
+              <face.uv_data>
+                <u_axis x="0" y="0" z="1" />
+                <v_axis x="1" y="0" z="0" />
+                <uv_scale x="0.25" y="0.25" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="-400" y="250" z ="0"/>
+                <vertex x="-400" y="250" z ="-400"/>
+                <vertex x="0" y="250" z ="-400"/>
+                <vertex x="0" y="250" z ="0"/>
+              </face.vertices>
+            </face>
+
+          </brush.faces>
+        </brush>
+
+        <!-- room 1 column -->
+        <brush material="stones"
+               useSmoothing="on">
+          <brush.faces>
+            <face id="wall_s">
+              <face.uv_data>
+                <u_axis x="0" y="1" z="0" />
+                <v_axis x="1" y="0" z="0" />
+                <uv_scale x="0.25" y="0.25" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="-190" y="0" z ="-190"/>
+                <vertex x="-190" y="250" z ="-190"/>
+                <vertex x="-210" y="250" z ="-190"/>
+                <vertex x="-210" y="0" z ="-190"/>
+              </face.vertices>
+            </face>
+
+            <face id="wall_n">
+              <face.uv_data>
+                <u_axis x="0" y="1" z="0" />
+                <v_axis x="-1" y="0" z="0" />
+                <uv_scale x="0.25" y="0.25" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="-210" y="0" z ="-210"/>
+                <vertex x="-210" y="250" z ="-210"/>
+                <vertex x="-190" y="250" z ="-210"/>
+                <vertex x="-190" y="0" z ="-210"/>
+              </face.vertices>
+            </face>
+
+            <face id="wall_e">
+              <face.uv_data>
+                <u_axis x="0" y="1" z="0" />
+                <v_axis x="0" y="0" z="1" />
+                <uv_scale x="0.25" y="0.25" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="-190" y="0" z ="-210"/>
+                <vertex x="-190" y="250" z ="-210"/>
+                <vertex x="-190" y="250" z ="-190"/>
+                <vertex x="-190" y="0" z ="-190"/>
+              </face.vertices>
+            </face>
+
+
+            <face id="wall_w">
+              <face.uv_data>
+                <u_axis x="0" y="1" z="0" />
+                <v_axis x="0" y="0" z="-1" />
+                <uv_scale x="0.25" y="0.25" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="-210" y="0" z ="-190"/>
+                <vertex x="-210" y="250" z ="-190"/>
+                <vertex x="-210" y="250" z ="-210"/>
+                <vertex x="-210" y="0" z ="-210"/>
+              </face.vertices>
+            </face>
+
+
+
+          </brush.faces>
+        </brush>
+
+      </world.statics>
+
+    </world>
+  </xscene.world>
+
+  <xscene.entities>
+    <info.player_model model="ship1"
+                           material="ship1"
+                           position="-50 150 -50"/>
+    <!-- Room #1 lights -->
+
+    <!--<light.generic type="spot"
+                       color="255 255 255"
+                       position="0 250 -200"
+                       direction="-1 -1 0"
+                       innerAngle="75"
+                       outerAngle="90"
+                       intensity="1"
+                       castsShadows="yes"
+                       softShadows="yes
+                       radius="1500" />
+
+    <light.generic type="spot"
+                       color="255 255 255"
+                       position="-400 250 -200"
+                       direction="0 -1 1"
+                       innerAngle="75"
+                       outerAngle="90"
+                       intensity="1"
+                       castsShadows="yes"
+                       softShadows="no"
+                       radius="1500" />-->
+    <light.generic id="rl0" type="spot"
+                          color="255 255 255"
+                          position="-400 250 -200"
+                          direction="0 -1 0"
+                          innerAngle="90"
+                          outerAngle="90"
+                          intensity="1"
+                          castsShadows="yes"
+                          softShadows="no"
+                          radius="500" />
+    <light.generic id="rl1" type="spot"
+                             color="255 255 255"
+                             position="-400 250 -200"
+                             direction="0 1 0"
+                             innerAngle="90"
+                             outerAngle="90"
+                             intensity="1"
+                             castsShadows="yes"
+                             softShadows="no"
+                             radius="500" />
+    <light.generic id="rl2" type="spot"
+                             color="255 255 255"
+                             position="-400 250 -200"
+                             direction="1 0 0"
+                             innerAngle="90"
+                             outerAngle="90"
+                             intensity="1"
+                             castsShadows="yes"
+                             softShadows="no"
+                             radius="500" />
+    <light.generic id="rl3" type="spot"
+                         color="255 255 255"
+                         position="-400 250 -200"
+                         direction="-1 0 0"
+                         innerAngle="90"
+                         outerAngle="90"
+                         intensity="1"
+                         castsShadows="yes"
+                         softShadows="no"
+                         radius="500" />
+    <light.generic id="rl4" type="spot"
+                         color="255 255 255"
+                         position="-400 250 -200"
+                         direction="0 0 -1"
+                         innerAngle="90"
+                         outerAngle="90"
+                         intensity="1"
+                         castsShadows="yes"
+                         softShadows="no"
+                         radius="500" />
+    <light.generic id="rl5" type="spot"
+                             color="255 255 255"
+                             position="-400 250 -200"
+                             direction="0 0 1"
+                             innerAngle="90"
+                             outerAngle="90"
+                             intensity="1"
+                             castsShadows="yes"
+                             softShadows="no"
+                             radius="500" />    
+
+
+    <controller.rotate target="rl0"
+                           radius="200"
+                           axis="0 1 0"
+                           center="-200 125 -200"
+                           speed="10"
+                           angle="0"/>
+    <controller.rotate target="rl1"
+                           radius="200"
+                           axis="0 1 0"
+                           center="-200 125 -200"
+                           speed="10"
+                           angle="0"/>
+    <controller.rotate target="rl2"
+                          radius="200"
+                          axis="0 1 0"
+                          center="-200 125 -200"
+                          speed="10"
+                          angle="0"/>
+    <controller.rotate target="rl3"
+                          radius="200"
+                          axis="0 1 0"
+                          center="-200 125 -200"
+                          speed="10"
+                          angle="0"/>
+    <controller.rotate target="rl4"
+                          radius="200"
+                          axis="0 1 0"
+                          center="-200 125 -200"
+                          speed="10"
+                          angle="0"/>
+    <controller.rotate target="rl5"
+                          radius="200"
+                          axis="0 1 0"
+                          center="-200 125 -200"
+                          speed="10"
+                          angle="0"/>
+
+
+  </xscene.entities>
+
+
+
+</xscene>

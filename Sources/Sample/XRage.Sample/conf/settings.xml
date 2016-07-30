@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<settings>
+  <graphics>
+    <mode width="1280" 
+          height="720" 
+          vsynch="off" 
+          fullscreen="off" />
+    <!--<renderer factory="AISTek.XRage.Sample.SampleRendererFactory, XRage.Sample"
+              quality="Highest"/>-->
+
+    <renderer type="deferred">
+      <gbuffer format="32bit"/>
+      <shadows size="512"/>
+    </renderer>
+  </graphics>
+
+  <physics factory="AISTek.XRage.Physics.JigLibXPhysicManagerFactory, XRage.Physics.JigX">
+  </physics>
+  
+  <content contentPath=".">    
+  </content>
+
+  <game mouseSensitivity="0.1">    
+  </game>
+</settings>

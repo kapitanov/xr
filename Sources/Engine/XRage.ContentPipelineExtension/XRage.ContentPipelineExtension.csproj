@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectGuid>{B0BB62A0-1B61-4372-93DC-5526A05D805B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AISTek.XRage</RootNamespace>
+    <AssemblyName>XRage.ContentPipelineExtension</AssemblyName>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaPlatform>Windows</XnaPlatform>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>True</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>False</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>False</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>False</CodeContractsArithmeticObligations>
+    <CodeContractsRedundantAssumptions>False</CodeContractsRedundantAssumptions>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>False</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsPlatformPath />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsBaseLineFile />
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>%28none%29</CodeContractsReferenceAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Content\Graphics\StaticModelProcessor.cs" />
+    <Compile Include="Content\Graphics\CompiledMaterial.cs" />
+    <Compile Include="Content\Graphics\CompiledMaterialImporter.cs" />
+    <Compile Include="Content\Graphics\CompiledMaterialProcessor.cs" />
+    <Compile Include="Content\Graphics\CompiledMaterialWriter.cs" />
+    <Compile Include="Content\Graphics\ConstantParameter.cs" />
+    <Compile Include="Content\Graphics\VariableParameter.cs" />
+    <Compile Include="Content\Graphics\VariableType.cs" />
+    <Compile Include="Content\SceneManagement\CompiledXBrushImporter.cs" />
+    <Compile Include="Content\SceneManagement\CompiledXWorldImporter.cs" />
+    <Compile Include="Content\SceneManagement\ContentWriterWrapper.cs" />
+    <Compile Include="Content\SceneManagement\VmfBrushSide.cs" />
+    <Compile Include="Content\SceneManagement\CompiledVmfBrush.cs" />
+    <Compile Include="Content\SceneManagement\CompiledVmfScene.cs" />
+    <Compile Include="Content\SceneManagement\CompiledVmfStaticEntity.cs" />
+    <Compile Include="Content\SceneManagement\VmfSceneImporter.cs" />
+    <Compile Include="Content\SceneManagement\VmfSceneProcessor.cs" />
+    <Compile Include="Content\SceneManagement\VmfSceneWriter.cs" />
+    <Compile Include="Content\SceneManagement\XSceneImporter.cs" />
+    <Compile Include="Content\SceneManagement\XSceneProcessor.cs" />
+    <Compile Include="Content\SceneManagement\XSceneWriter.cs" />
+    <Compile Include="Content\XmlDataHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\VmfScene\XRage.VmfParser\XRage.VmfParser.csproj">
+      <Project>{2349CFB1-815D-463A-BBCC-8360D3EBC4FD}</Project>
+      <Name>XRage.VmfParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VmfScene\XRage.VmfScene\XRage.VmfScene.csproj">
+      <Project>{FCE6F710-B678-4904-A612-7C1C1B11938B}</Project>
+      <Name>XRage.VmfScene</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\XScene\XRage.CompiledXScene\XRage.CompiledXScene.csproj">
+      <Project>{E1487610-4462-4F02-BA7B-F8AB21144664}</Project>
+      <Name>XRage.CompiledXScene</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XRage.Engine\XRage.Engine.csproj">
+      <Project>{0F42E350-18EF-4062-8E29-389B7AACAE3D}</Project>
+      <Name>XRage.Engine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.ContentPipelineExtensions.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

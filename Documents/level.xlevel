@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xlevel>
+
+  <xlevel.properties>
+    <name>test scene</name>
+  </xlevel.properties>
+
+  <xlevel.world>
+
+    <world>
+
+      <world.sky>
+        <skybox material="materials/sky/defaultSkybox" />
+      </world.sky>
+
+      <world.terrain>
+        <terrain material="materials/terrain"
+                 heightMap="levels/test_scene/terrain_heightmap"
+                 surfaceMap="levels/test_scene/terrain_surfacemap" />
+      </world.terrain>
+
+      <world.statics>
+
+        <brush material="materials/dev/graygrid">
+          <brush.faces>
+            <face>
+              <face.uv_data>
+                <u_axis x="0" y="1" z="0" />
+                <v_axis x="0" y="1" z="0" />
+                <uv_scale x="1" y="1" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="0" y="0" z="0" />
+                <vertex x="1" y="0" z="0" />
+                <vertex x="1" y="1" z="0" />
+                <vertex x="0" y="1" z="0" />
+              </face.vertices>
+            </face>
+          </brush.faces>
+        </brush>
+
+      </world.statics>
+
+    </world>
+  </xlevel.world>
+
+  <xlevel.entities>
+
+    <info.player_start position="(0 0 0)" rotation="(0 0 0)">
+
+    </info.player_start>
+
+    <light.sun direction="(0 -1 0)"
+               visual="sprites/sun"
+               godrays="on" />
+
+  </xlevel.entities>
+</xlevel>

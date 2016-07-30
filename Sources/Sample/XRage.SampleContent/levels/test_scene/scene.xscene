@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xscene>
+
+  <xscene.properties>
+    <scene_name>test xscene</scene_name>
+  </xscene.properties>
+
+  <xscene.world>
+
+    <world>
+
+      <!--<world.sky>
+        <skybox material="materials/sky/defaultSkybox" />
+      </world.sky>-->
+
+      <!--<world.terrain>
+        <terrain material="terrain"
+                 heightMap="test_scene/gcanyon_height"
+                 scale="100.0"
+                 elevation="25.0" />
+      </world.terrain>-->
+
+      <world.statics>
+
+        <!-- sandbox -->
+        <brush material="stones"
+               useSmoothing="off">
+          <brush.faces>
+            <face id="ground">
+              <face.uv_data>
+                <u_axis x="0" y="0" z="-1" />
+                <v_axis x="-1" y="0" z="0" />
+                <uv_scale x="0.25" y="0.25" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="-1000" y="0" z ="1000"/>
+                <vertex x="1000" y="0" z ="1000"/>
+                <vertex x="1000" y="0" z ="-1000"/>
+                <vertex x="-1000" y="0" z ="-1000"/>
+              </face.vertices>
+            </face>
+
+            <face id="border[0]">
+              <face.uv_data>
+                <u_axis x="0" y="0" z="-1" />
+                <v_axis x="0" y="1" z="0" />
+                <uv_scale x="0.25" y="0.25" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="-1000" y="0" z="1000" />
+                <vertex x="-1000" y="0" z="-1000" />
+                <vertex x="-1000" y="100" z="-1000" />
+                <vertex x="-1000" y="100" z="1000" />
+              </face.vertices>
+            </face>
+
+            <face id="border[1]">
+              <face.uv_data>
+                <u_axis x="1" y="0" z="0" />
+                <v_axis x="0" y="1" z="0" />
+                <uv_scale x="0.25" y="0.25" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="-1000" y="0" z="-1000" />
+                <vertex x="1000" y="0" z="-1000" />
+                <vertex x="1000" y="100" z="-1000" />
+                <vertex x="-1000" y="100" z="-1000" />
+              </face.vertices>
+            </face>
+
+            <face id="border[2]">
+              <face.uv_data>
+                <u_axis x="0" y="0" z="1" />
+                <v_axis x="0" y="1" z="0" />
+                <uv_scale x="0.25" y="0.25" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="1000" y="0" z="-1000" />
+                <vertex x="1000" y="0" z="1000" />
+                <vertex x="1000" y="100" z="1000" />
+                <vertex x="1000" y="100" z="-1000" />
+              </face.vertices>
+            </face>
+
+            <face id="border[3]">
+              <face.uv_data>
+                <u_axis x="-1" y="0" z="0" />
+                <v_axis x="0" y="1" z="0" />
+                <uv_scale x="0.25" y="0.25" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="1000" y="0" z="1000" />
+                <vertex x="-1000" y="0" z="1000" />
+                <vertex x="-1000" y="100" z="1000" />
+                <vertex x="1000" y="100" z="1000" />
+              </face.vertices>
+            </face>
+
+          </brush.faces>
+        </brush>
+
+        <!-- cylinder -->
+        <brush material="stones"
+               useSmoothing="off">
+          <brush.faces>
+            <face id="side[1]">
+              <face.uv_data>
+                <u_axis x="3" y="0" z="-7" />
+                <v_axis x="0" y="1" z="0" />
+                <uv_scale x="4" y="4" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="7" y="0" z ="7"/>
+                <vertex x="10" y="0" z ="0"/>
+                <vertex x="10" y="25" z ="0"/>
+                <vertex x="7" y="25" z ="7"/>
+              </face.vertices>
+            </face>
+
+            <face id="side[2]">
+              <face.uv_data>
+                <u_axis x="-3" y="0" z="-7" />
+                <v_axis x="0" y="1" z="0" />
+                <uv_scale x="4" y="4" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="10" y="0" z ="0"/>
+                <vertex x="7" y="0" z ="-7"/>
+                <vertex x="7" y="25" z ="-7"/>
+                <vertex x="10" y="25" z ="0"/>
+              </face.vertices>
+            </face>
+
+            <face id="side[3]">
+              <face.uv_data>
+                <u_axis x="-7" y="0" z="-3" />
+                <v_axis x="0" y="1" z="0" />
+                <uv_scale x="4" y="4" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="7" y="0" z ="-7"/>
+                <vertex x="0" y="0" z ="-10"/>
+                <vertex x="0" y="25" z ="-10"/>
+                <vertex x="7" y="25" z ="-7"/>
+              </face.vertices>
+            </face>
+
+            <face id="side[4]">
+              <face.uv_data>
+                <u_axis x="-7" y="0" z="3" />
+                <v_axis x="0" y="1" z="0" />
+                <uv_scale x="4" y="4" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="0" y="0" z ="-10"/>
+                <vertex x="-7" y="0" z ="-7"/>
+                <vertex x="-7" y="25" z ="-7"/>
+                <vertex x="0" y="25" z ="-10"/>
+              </face.vertices>
+            </face>
+
+            <face id="side[5]">
+              <face.uv_data>
+                <u_axis x="-3" y="0" z="7" />
+                <v_axis x="0" y="1" z="0" />
+                <uv_scale x="4" y="4" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="-7" y="0" z ="-7"/>
+                <vertex x="-10" y="0" z ="0"/>
+                <vertex x="-10" y="25" z ="0"/>
+                <vertex x="-7" y="25" z ="-7"/>
+              </face.vertices>
+            </face>
+
+            <face id="side[6]">
+              <face.uv_data>
+                <u_axis x="7" y="0" z="3" />
+                <v_axis x="0" y="1" z="0" />
+                <uv_scale x="4" y="4" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="-10" y="0" z ="0"/>
+                <vertex x="-7" y="0" z ="7"/>
+                <vertex x="-7" y="25" z ="7"/>
+                <vertex x="-10" y="25" z ="0"/>
+              </face.vertices>
+            </face>
+
+            <face id="side[7]">
+              <face.uv_data>
+                <u_axis x="7" y="0" z="3" />
+                <v_axis x="0" y="1" z="0" />
+                <uv_scale x="4" y="4" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="-7" y="0" z ="7"/>
+                <vertex x="0" y="0" z ="10"/>
+                <vertex x="0" y="25" z ="10"/>
+                <vertex x="-7" y="25" z ="7"/>
+              </face.vertices>
+            </face>
+
+            <face id="side[8]">
+              <face.uv_data>
+                <u_axis x="7" y="0" z="-3" />
+                <v_axis x="0" y="1" z="0" />
+                <uv_scale x="4" y="4" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="0" y="0" z ="10"/>
+                <vertex x="7" y="0" z ="7"/>
+                <vertex x="7" y="25" z ="7"/>
+                <vertex x="0" y="25" z ="10"/>
+              </face.vertices>
+            </face>
+
+            <face id="top">
+              <face.uv_data>
+                <u_axis x="1" y="0" z="0" />
+                <v_axis x="0" y="0" z="1" />
+                <uv_scale x="4" y="4" />
+              </face.uv_data>
+              <face.vertices>
+                <vertex x="0" y="25" z ="10"/>
+                <vertex x="7" y="25" z ="7"/>
+                <vertex x="10" y="25" z ="0"/>
+                <vertex x="7" y="25" z ="-7"/>
+                <vertex x="0" y="25" z ="-10"/>
+                <vertex x="-7" y="25" z ="-7"/>
+                <vertex x="-10" y="25" z ="0"/>
+                <vertex x="-7" y="25" z ="7"/>
+              </face.vertices>
+            </face>
+
+          </brush.faces>
+        </brush>
+
+      </world.statics>
+
+    </world>
+  </xscene.world>
+
+  <xscene.entities>
+
+    <!--<info.player_start position="(0 0 0)" rotation="(0 0 0)" />
+
+    <light.sun direction="(0 -1 0)"
+               visual="sprites/sun"
+               godrays="on" />-->
+
+    <info.player_model model="ship1"
+                           material="ship1"
+                           position="0 100 0"/>
+    <!-- Central light -->
+    <!--<light.generic id="centerSpotLight"
+                   type="spot"
+                   color="64 192 255"
+                   position="0 200 0"
+                   direction="0 -1 0"
+                   innerAngle="45"
+                   outerAngle="75"
+                   intensity="0.5"
+                   castsShadows="yes"
+                   radius="1500" />-->
+
+
+    <light.generic id="alarmSpotLight"
+                 type="spot"
+                 color="255 0 0"
+                 position="0 0 0"
+                 direction="1 -0.5 0"
+                 innerAngle="75"
+                 outerAngle="75"
+                 intensity="1"
+                 castsShadows="yes"
+                 radius="1500" />
+
+    <controller.animateColor target="alarmSpotLight"
+                             property="color"
+                             from="255 0 0"
+                             to="0 255 255"
+                             speed="50"/>
+
+    <controller.rotate target="alarmSpotLight"
+                    radius="10"
+                    axis="0 1 0"
+                    center="0 200 0"
+                    speed="150" />
+    
+    <!-- Corner lights -->
+    <light.generic type="point"
+                     color="255 0 0"
+                     position="950 100 950"
+                     direction="-1 -1 -1"
+                     innerAngle="75"
+                     outerAngle="90"
+                     radius="750" />
+
+    <light.generic type="point"
+                  color="255 0 0"
+                  position="-950 100 950"
+                  direction="1 -1 -1"
+                  innerAngle="75"
+                  outerAngle="90"
+                  radius="500" />
+
+    <light.generic type="point"
+                  color="255 0 0"
+                  position="950 100 -950"
+                  direction="-1 -1 -1"
+                  innerAngle="75"
+                  outerAngle="90"
+                  radius="750" />
+
+    <light.generic type="point"
+                  color="255 0 0"
+                  position="-950 100 -950"
+                  direction="1 -1 1"
+                  innerAngle="75"
+                  outerAngle="90"
+                  radius="750" />
+
+    <!-- Rotating lights -->
+    <light.generic id="rotatingLight1"
+                   type="spot"
+                   color="0 255 0"
+                   position="0 0 0"
+                   direction="0 -1 0"
+                   innerAngle="0"
+                   outerAngle="90"
+                   intensity="0.75"
+                   castsShadows="yes"
+                   radius="1500" />
+
+    <light.generic id="rotatingLight2"
+                   type="spot"
+                   color="0 255 0"
+                   position="0 0 0"
+                   direction="0 -1 0"
+                   innerAngle="0"
+                   outerAngle="90"
+                   intensity="0.75"
+                   castsShadows="yes"
+                   radius="1500" />
+
+    <light.generic id="rotatingLight3"
+                   type="spot"
+                   color="255 255 255"
+                   position="0 0 0"
+                   direction="0 -1 0"
+                   innerAngle="0"
+                   outerAngle="90"
+                   intensity="1"
+                   castsShadows="no"
+                   radius="1500" />
+
+    <light.generic id="rotatingLight4"
+                   type="spot"
+                   color="255 255 255"
+                   position="0 0 0"
+                   direction="0 -1 0"
+                   innerAngle="0"
+                   outerAngle="90"
+                   intensity="1"
+                   castsShadows="no"
+                   radius="1500" />
+
+    <!-- Rotating light controllers -->
+   <controller.rotate target="rotatingLight1"
+                    radius="500"
+                    axis="0 1 0"
+                    center="0 250 0"
+                    speed="45" />
+ 
+    <controller.rotate target="rotatingLight2"
+                     radius="500"
+                     axis="0 1 0"
+                     center="0 250 0"
+                     speed="45"
+                     angle="180"/>
+
+    <controller.rotate target="rotatingLight3"
+                   radius="500"
+                   axis="0 1 0"
+                   center="0 250 0"
+                   speed="-45"
+                   angle="90"/>
+
+    <controller.rotate target="rotatingLight4"
+                       radius="500"
+                       axis="0 1 0"
+                       center="0 250 0"
+                       speed="-45"
+                       angle="270"/>
+
+    <!-- Static models -->
+
+    <prop.static model="ship1"
+                 material="ship1"
+                 position="0 50 0"/>
+    <!--  -->
+
+    <prop.static model="ship1"
+                 material="ship1"
+                 position="100 50 100"/>
+
+    <prop.static model="ship1"
+                 material="ship1"
+                 position="100 50 -100"/>
+
+    <prop.static model="ship1"
+                 material="ship1"
+                 position="-100 50 100"/>
+
+    <prop.static model="ship1"
+                 material="ship1"
+                 position="-100 50 -100"/>
+
+    <!--  -->
+
+    <prop.static model="ship1"
+                 material="ship1"
+                 position="200 50 200"/>
+
+    <prop.static model="ship1"
+                 material="ship1"
+                 position="200 50 -200"/>
+
+    <prop.static model="ship1"
+                 material="ship1"
+                 position="-200 50 200"/>
+
+    <prop.static model="ship1"
+                 material="ship1"
+                 position="-200 50 -200"/>
+
+
+    <prop.static model="ship1"
+                material="ship1"
+                position="200 50 100"/>
+
+    <prop.static model="ship1"
+                 material="ship1"
+                 position="200 50 -100"/>
+
+    <prop.static model="ship1"
+                 material="ship1"
+                 position="-200 50 100"/>
+
+    <prop.static model="ship1"
+                 material="ship1"
+                 position="-200 50 -100"/>
+
+
+    <prop.static model="ship1"
+                material="ship1"
+                position="100 50 200"/>
+
+    <prop.static model="ship1"
+                 material="ship1"
+                 position="100 50 -200"/>
+
+    <prop.static model="ship1"
+                 material="ship1"
+                 position="-100 50 200"/>
+
+    <prop.static model="ship1"
+                 material="ship1"
+                 position="-100 50 -200"/>
+
+
+
+    <prop.static model="ship1"
+              material="ship1"
+              position="0 50 250"/>
+
+    <prop.static model="ship1"
+                 material="ship1"
+                 position="0 50 -250"/>
+
+    <prop.static model="ship1"
+                 material="ship1"
+                 position="-250 50 0"/>
+
+    <prop.static model="ship1"
+                 material="ship1"
+                 position="250 50 0"/>
+
+    <!--  -->
+
+
+    <prop.static id="rotating_ship1"
+                 model="ship1"
+                 material="ship1"
+                 position="0 150 0"/>
+
+    <controller.rotate target="rotating_ship1"
+                       radius="500"
+                       axis="0 1 0"
+                       center="0 25 0"
+                       speed="10"
+                       angle="0"/>
+
+
+    <prop.static id="rotating_ship2"
+                 model="ship1"
+                 material="ship1"
+                 position="0 150 0"/>
+
+    <controller.rotate target="rotating_ship2"
+                       radius="150"
+                       axis="1 0 0"
+                       center="150 250 0"
+                       speed="10"
+                       angle="0"/>
+
+
+
+  </xscene.entities>
+
+
+
+</xscene>

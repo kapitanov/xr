@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Common.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysXActor.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysXScene.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysXPhysicsManager.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{d75b376c-d176-41e4-bd76-e91521b2733f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{e24ce014-5672-4d41-aabc-e28a243cfeb5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PhysXActor.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysXScene.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysXPhysicsManager.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
